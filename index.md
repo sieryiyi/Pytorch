@@ -48,3 +48,5 @@ optimizer.zero_grad() # 网络梯度清零
 loss.backward()  # 误差的反向传播
 optimizer.step() # 根据反向传播的误差更新参数
 ```
+
+参数梯度归零：w.data.zero_()
