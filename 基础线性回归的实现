@@ -1,3 +1,7 @@
+## 实现简单线性回归pytorch
+
+还没有使用nn.Module
+
 ```
 import torch
 import numpy as np
@@ -38,3 +42,9 @@ plt.plot(x.numpy().reshape(-1),y_predict.detach().numpy().reshape(-1),color='g')
 plt.show()
 
 ```
+
+### tensor.detach()
+
+返回一个新的tensor，从当前计算图中分离下来的，但是仍指向原变量的存放位置
+
+不同之处只是requires_grad为false，得到的这个tensor永远不需要计算其梯度，不具有grad
